@@ -1,0 +1,44 @@
+{
+	"_format_version": "1.1",
+	"services": [
+		{
+			"name": "Dino_Park",
+			"protocol": "https",
+			"host": "mockbin.org",
+			"port": 443,
+			"path": "/request/v1",
+			"plugins": [],
+			"routes": [
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "Dino_Park-listDinosaurs",
+					"methods": [
+						"GET"
+					],
+					"paths": [
+						"/dinosaurs$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "Dino_Park-createDinosaur",
+					"methods": [
+						"POST"
+					],
+					"paths": [
+						"/dinosaurs$"
+					],
+					"strip_path": false
+				}
+			],
+			"tags": [
+				"OAS3_import"
+			]
+		}
+	]
+}
