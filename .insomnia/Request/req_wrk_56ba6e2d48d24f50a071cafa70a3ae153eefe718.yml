@@ -1,0 +1,24 @@
+_id: req_wrk_56ba6e2d48d24f50a071cafa70a3ae153eefe718
+type: Request
+parentId: fld_wrk_56ba6e2d48d24f50a071cafa70a3ae1578dd29cc
+modified: 1650545489247
+created: 1650545489247
+url: "{{ base_url }}/dinosaurs"
+name: List all Dinosaurs
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: limit
+    disabled: true
+    value: "0"
+headers: []
+authentication: {}
+metaSortKey: -1650545489247
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
