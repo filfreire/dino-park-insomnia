@@ -28,11 +28,11 @@ deck sync -s kong.json
 
 - Import this repository on Insomnia via Git (link to repo is: `https://github.com/filfreire/dino-park-insomnia.git`)
 
-![](imgs/git.png)
+![Insomnia Git Sync image](imgs/git.png)
 
 - If you make changes to the Spec, you can re-run on Insomnia the Declarative config generation (see image bellow), and edit the contents of [kong.json](kong.json) file with the output. Don't forget to re-apply it to your Kong gateway instance by running `deck sync -s kong.json`.
 
-![](imgs/declarative.png)
+![Declarative configuration for Kong image](imgs/declarative.png)
 
 ## Other
 
@@ -43,7 +43,8 @@ deck sync -s kong.json
 ### Useful documentation
 
 - [Installing and running Kong Gateway OSS using Docker](https://docs.konghq.com/gateway/latest/install-and-run/docker/);
-### Gitlab Example:
+
+### Gitlab Example
 
 - Spin up Gitlab Docker container: `docker-compose -f gitlab/docker-compose.yml up`
 - Get the `root` username password: `sudo docker exec -it gitlab_web_1 grep 'Password:' /etc/gitlab/initial_root_password`
