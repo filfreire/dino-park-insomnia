@@ -34,6 +34,19 @@
 						"/dinosaurs$"
 					],
 					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "Dino_Park-securityFences",
+					"methods": [
+						"POST"
+					],
+					"paths": [
+						"/security/fences$"
+					],
+					"strip_path": false
 				}
 			],
 			"tags": [
