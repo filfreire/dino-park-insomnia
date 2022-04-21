@@ -42,4 +42,11 @@ deck sync -s kong.json
 
 ### Useful documentation
 
-- [Installing and running Kong Gateway OSS using Docker](https://docs.konghq.com/gateway/latest/install-and-run/docker/)
+- [Installing and running Kong Gateway OSS using Docker](https://docs.konghq.com/gateway/latest/install-and-run/docker/);
+### Gitlab Example:
+
+- Spin up Gitlab Docker container: `docker-compose -f gitlab/docker-compose.yml up`
+- Get the `root` username password: `sudo docker exec -it gitlab_web_1 grep 'Password:' /etc/gitlab/initial_root_password`
+- Login to the Gitlab Docker container
+- Setup a personal access token (see [this link](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) on how to do it)
+- Create a blank repo, and import it to Insomnia (e.g. `http://localhost/root/example-repo.git`)
