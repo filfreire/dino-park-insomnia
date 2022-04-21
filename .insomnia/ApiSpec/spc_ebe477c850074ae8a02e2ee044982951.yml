@@ -1,7 +1,7 @@
 _id: spc_ebe477c850074ae8a02e2ee044982951
 type: ApiSpec
 parentId: wrk_56ba6e2d48d24f50a071cafa70a3ae15
-modified: 1650547389260
+modified: 1650558195476
 created: 1649317912103
 fileName: Dino Park
 contents: |-
@@ -53,6 +53,7 @@ contents: |-
               application/json:
                 schema:
                   $ref: "#/components/schemas/Error"
+
       post:
         summary: Create a Dinosaur
         operationId: createDinosaur
@@ -67,6 +68,19 @@ contents: |-
               application/json:
                 schema:
                   $ref: "#/components/schemas/Error"
+    /security/fences:
+      post:
+        summary: Turn on/off the electricity of the fences
+        operationId: securityFences
+        tags:
+          - security
+        responses:
+          '201':
+            description: Null response
+          default:
+            description: unexpected error
+            content:
+              application/json: {}
   components:
     schemas:
       Dinosaur:

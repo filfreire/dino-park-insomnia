@@ -1,0 +1,26 @@
+_id: req_wrk_56ba6e2d48d24f50a071cafa70a3ae153f2109c3
+type: Request
+parentId: wrk_56ba6e2d48d24f50a071cafa70a3ae15
+modified: 1650558176091
+created: 1650558061695
+url: "{{ base_url }}/security/fences"
+name: Turn on/off the electricity of the fences
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: "{}"
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_74f85f6229ab4801a49737271c564295
+authentication: {}
+metaSortKey: -1650558061695
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
