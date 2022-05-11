@@ -1,0 +1,21 @@
+_id: req_wrk_56ba6e2d48d24f50a071cafa70a3ae153325733a
+type: Request
+parentId: wrk_56ba6e2d48d24f50a071cafa70a3ae15
+modified: 1651763903215
+created: 1651763903215
+url: "{{ base_url }}/feeders/carnivores"
+name: Enable feeder machines for carnivores
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1651763903215
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
