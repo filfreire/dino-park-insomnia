@@ -42,8 +42,9 @@ start-kong:
 setup: build
 
 clean:
-	@docker kill kong-gateway
-	@docker kill kong-database
+	@docker stop kong-gateway
+	@docker stop kong-database
 	@docker container rm kong-gateway
 	@docker container rm kong-database
 	@docker network rm kong-net
+	@docker network prune
