@@ -2,9 +2,14 @@ build: build-network start-db prepare-db start-kong
 
 
 build-network:
+	@echo "Creating network..."
 	@docker network create kong-net
 
 start-db:
+	@echo "sleeping..."
+	@sleep 10
+	@echo "done!"
+	@echo "Starting DB..."
 	@docker run -d --name kong-database \
 		--network=kong-net \
 		-p 5432:5432 \
@@ -14,6 +19,10 @@ start-db:
 		postgres:9.6
 
 prepare-db:
+	@echo "sleeping..."
+	@sleep 10
+	@echo "done!"
+	@echo "Running migrations..."
 	@docker run --rm --network=kong-net \
 		-e "KONG_DATABASE=postgres" \
 		-e "KONG_PG_HOST=kong-database" \
@@ -21,6 +30,10 @@ prepare-db:
 		kong:2.8.1-alpine kong migrations bootstrap
 
 start-kong:
+	@echo "sleeping..."
+	@sleep 10
+	@echo "done!"
+	@echo "Starting kong-gateway..."
 	@docker run -d --name kong-gateway \
 		--network=kong-net \
 		-e "KONG_DATABASE=postgres" \
@@ -42,9 +55,10 @@ start-kong:
 setup: build
 
 clean:
-	@docker stop kong-gateway
 	@docker stop kong-database
-	@docker container rm kong-gateway
 	@docker container rm kong-database
+	@docker network prune
+	@docker stop kong-gateway
+	@docker container rm kong-gateway
 	@docker network rm kong-net
 	@docker network prune
