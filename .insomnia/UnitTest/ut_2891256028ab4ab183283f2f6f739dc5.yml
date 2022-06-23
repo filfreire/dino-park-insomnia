@@ -1,0 +1,10 @@
+_id: ut_2891256028ab4ab183283f2f6f739dc5
+type: UnitTest
+parentId: uts_033e8e024afa400ab1b5834e9855bbd7
+modified: 1655990105511
+created: 1655990103748
+requestId: req_wrk_56ba6e2d48d24f50a071cafa70a3ae153325733a
+name: ABC
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);
