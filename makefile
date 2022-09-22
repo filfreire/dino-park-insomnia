@@ -27,7 +27,8 @@ prepare-db:
 		-e "KONG_DATABASE=postgres" \
 		-e "KONG_PG_HOST=kong-database" \
 		-e "KONG_PG_PASSWORD=kongpass" \
-		kong:2.8.1-alpine kong migrations bootstrap
+		-e "KONG_PASSWORD=test" \
+		kong/kong-gateway:3.0.0.0-alpine kong migrations bootstrap
 
 start-kong:
 	@echo "sleeping..."
@@ -44,12 +45,18 @@ start-kong:
 		-e "KONG_ADMIN_ACCESS_LOG=/dev/stdout" \
 		-e "KONG_PROXY_ERROR_LOG=/dev/stderr" \
 		-e "KONG_ADMIN_ERROR_LOG=/dev/stderr" \
-		-e "KONG_ADMIN_LISTEN=0.0.0.0:8001, 0.0.0.0:8444 ssl" \
+		-e "KONG_ADMIN_LISTEN=0.0.0.0:8001" \
+		-e "KONG_ADMIN_GUI_URL=http://localhost:8002" \
+		-e KONG_LICENSE_DATA \
 		-p 8000:8000 \
 		-p 8443:8443 \
-		-p 127.0.0.1:8001:8001 \
-		-p 127.0.0.1:8444:8444 \
-		kong:2.8.1-alpine
+		-p 8001:8001 \
+		-p 8444:8444 \
+		-p 8002:8002 \
+		-p 8445:8445 \
+		-p 8003:8003 \
+		-p 8004:8004 \
+		kong/kong-gateway:3.0.0.0-alpine
 
 
 setup: build
