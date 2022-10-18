@@ -1,18 +1,14 @@
 _id: env_a845781bd2294d349a80270cca3d9987
 type: Environment
 parentId: env_3105d886bdaa60d1bbba8a7380f0aee6c5448c1d
-modified: 1650547210713
+modified: 1665761052460
 created: 1650547177066
 name: Via Kong GW
 data:
-  scheme: http
-  base_path: ""
-  host: localhost:8000
+  base_url: "{{ scheme }}://{{ host }}{{ base_path }}"
 dataPropertyOrder:
   "&":
-    - scheme
-    - base_path
-    - host
+    - base_url
 color: null
 isPrivate: false
 metaSortKey: 1650547177066

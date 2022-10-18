@@ -10,3 +10,7 @@ headers: []
 authentication: {}
 parameters: []
 settingEncodeUrl: true
+settingStoreCookies: true
+settingSendCookies: true
+settingFollowRedirects: global
+description: ""
