@@ -5,6 +5,9 @@ modified: 1665761052386
 created: 1650545226694
 name: OpenAPI env
 data:
+  scheme: https
+  base_path: /request/v1
+  host: mockbin.org
   base_url: "{{ scheme }}://{{ host }}{{ base_path }}"
 dataPropertyOrder:
   "&":
