@@ -5,8 +5,8 @@ modified: 1667236100268
 created: 1649317912116
 name: Base Environment
 data:
-  aaa: 2224442aaaaaaa22222aa
   base_url: "{{ scheme }}://{{ host }}{{ base_path }}"
+  aaa: 2224442aaaaaaa22222aa
 dataPropertyOrder:
   "&":
     - aaa
