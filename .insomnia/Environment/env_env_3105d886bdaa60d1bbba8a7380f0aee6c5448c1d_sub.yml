@@ -1,18 +1,23 @@
 _id: env_env_3105d886bdaa60d1bbba8a7380f0aee6c5448c1d_sub
 type: Environment
 parentId: env_3105d886bdaa60d1bbba8a7380f0aee6c5448c1d
-modified: 1667235923843
+modified: 1667412023885
 created: 1650545226694
 name: OpenAPI env
 data:
   scheme: https
   base_path: /request/v1
   host: mockbin.org
+  DEFAULT_HEADERS:
+    aaaa: minha machadinha
 dataPropertyOrder:
   "&":
     - scheme
     - base_path
     - host
+    - DEFAULT_HEADERS
+  "&~|DEFAULT_HEADERS":
+    - aaaa
 color: null
 isPrivate: false
 metaSortKey: 1650545226694
