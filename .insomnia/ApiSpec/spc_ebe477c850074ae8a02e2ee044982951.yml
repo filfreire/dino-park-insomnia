@@ -1,7 +1,7 @@
 _id: spc_ebe477c850074ae8a02e2ee044982951
 type: ApiSpec
 parentId: wrk_56ba6e2d48d24f50a071cafa70a3ae15
-modified: 1667410911970
+modified: 1668008273213
 created: 1649317912103
 fileName: Dino Park
 contents: |-
@@ -22,6 +22,7 @@ contents: |-
       description: Dinosaurs of Dino Park
   paths:
     /dinosaurs:
+      x-kong-name: dinosaurs
       get:
         summary: List all Dinosaurs
         operationId: listDinosaurs
@@ -69,6 +70,7 @@ contents: |-
                 schema:
                   $ref: "#/components/schemas/Error"
     /security/fences:
+      x-kong-name: security-fences
       post:
         summary: Turn on/off the electricity of the fences
         operationId: securityFences
