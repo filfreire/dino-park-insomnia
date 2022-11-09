@@ -1,7 +1,7 @@
 _id: spc_ebe477c850074ae8a02e2ee044982951
 type: ApiSpec
 parentId: wrk_56ba6e2d48d24f50a071cafa70a3ae15
-modified: 1668008273213
+modified: 1668008399423
 created: 1649317912103
 fileName: Dino Park
 contents: |-
@@ -56,6 +56,8 @@ contents: |-
                   $ref: "#/components/schemas/Error"
 
       post:
+        x-kong-plugin-request-validator:
+          enabled: true
         summary: Create a Dinosaur
         operationId: createDinosaur
         tags:
