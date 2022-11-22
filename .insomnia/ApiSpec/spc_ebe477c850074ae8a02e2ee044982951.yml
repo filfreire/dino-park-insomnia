@@ -1,7 +1,7 @@
 _id: spc_ebe477c850074ae8a02e2ee044982951
 type: ApiSpec
 parentId: wrk_56ba6e2d48d24f50a071cafa70a3ae15
-modified: 1668008399423
+modified: 1669136524627
 created: 1649317912103
 fileName: Dino Park
 contents: |-
@@ -20,6 +20,8 @@ contents: |-
   tags:
     - name: dinosaurs
       description: Dinosaurs of Dino Park
+
+    
   paths:
     /dinosaurs:
       x-kong-name: dinosaurs
@@ -74,6 +76,8 @@ contents: |-
     /security/fences:
       x-kong-name: security-fences
       post:
+        security:
+            - my_api_key: []
         summary: Turn on/off the electricity of the fences
         operationId: securityFences
         tags:
@@ -85,7 +89,18 @@ contents: |-
             description: unexpected error
             content:
               application/json: {}
+  security:
+   - my_api_key: []
+
   components:
+    securitySchemes:
+      my_api_key:
+        type: apiKey
+        name: api_key_by_me
+        in: header
+        x-kong-security-basic-auth:
+          tags:
+            - should not match
     schemas:
       Dinosaur:
         type: object
