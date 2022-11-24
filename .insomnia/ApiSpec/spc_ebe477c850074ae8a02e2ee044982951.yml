@@ -1,11 +1,11 @@
 _id: spc_ebe477c850074ae8a02e2ee044982951
 type: ApiSpec
 parentId: wrk_56ba6e2d48d24f50a071cafa70a3ae15
-modified: 1669136524627
+modified: 1669307559533
 created: 1649317912103
 fileName: Dino Park
 contents: |-
-  openapi: 3.0.0
+  openapi: 3.1.0
   info:
     description: "Our Dino Park API"
     version: 1.0.2
@@ -14,6 +14,7 @@ contents: |-
     contact:
       email: support@insomnia.rest
     license:
+      identifier: "mit"
       name: MIT
   servers:
     - url: https://mockbin.org/request/v1
