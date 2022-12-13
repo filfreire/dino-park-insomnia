@@ -19,7 +19,11 @@ headers:
   - name: Content-Type
     value: application/json
     id: pair_cb7c79fd3c574217aa4857884e1692b7
-authentication: {}
+authentication:
+  type: apikey
+  key: api_key_by_me
+  value: "{{ apiKeyByMe }}"
+  addTo: header
 metaSortKey: -1650545489246
 isPrivate: false
 settingStoreCookies: true

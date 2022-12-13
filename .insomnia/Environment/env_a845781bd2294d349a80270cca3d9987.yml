@@ -1,7 +1,7 @@
 _id: env_a845781bd2294d349a80270cca3d9987
 type: Environment
 parentId: env_3105d886bdaa60d1bbba8a7380f0aee6c5448c1d
-modified: 1667411994232
+modified: 1670931964332
 created: 1650547177066
 name: Via Kong GW
 data:
@@ -10,12 +10,14 @@ data:
   host: localhost
   DEFAULT_HEADERS:
     aaaa: minha machadinha
+  apiKeyByMe: apiKeyByMe
 dataPropertyOrder:
   "&":
     - scheme
     - base_path
     - host
     - DEFAULT_HEADERS
+    - apiKeyByMe
   "&~|DEFAULT_HEADERS":
     - aaaa
 color: null

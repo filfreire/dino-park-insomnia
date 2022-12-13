@@ -13,7 +13,11 @@ parameters:
     disabled: true
     value: "0"
 headers: []
-authentication: {}
+authentication:
+  type: apikey
+  key: api_key_by_me
+  value: "{{ apiKeyByMe }}"
+  addTo: header
 metaSortKey: -1650545489247
 isPrivate: false
 settingStoreCookies: true

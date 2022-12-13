@@ -1,25 +1,20 @@
-_id: env_env_3105d886bdaa60d1bbba8a7380f0aee6c5448c1d_sub
+_id: env_env_3105d886bdaa60d1bbba8a7380f0aee6c5448c1d_sub__86658743
 type: Environment
 parentId: env_3105d886bdaa60d1bbba8a7380f0aee6c5448c1d
-modified: 1670931962666
-created: 1650545226694
-name: OpenAPI env
+modified: 1670931955312
+created: 1670931896825
+name: OpenAPI env mockbin.org
 data:
   scheme: https
   base_path: /request/v1
   host: mockbin.org
-  DEFAULT_HEADERS:
-    aaaa: minha machadinha
   apiKeyByMe: apiKeyByMe
 dataPropertyOrder:
   "&":
     - scheme
     - base_path
     - host
-    - DEFAULT_HEADERS
     - apiKeyByMe
-  "&~|DEFAULT_HEADERS":
-    - aaaa
 color: null
 isPrivate: false
-metaSortKey: 1650545226694
+metaSortKey: 1670931896825
