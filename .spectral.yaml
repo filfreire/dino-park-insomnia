@@ -1,2 +1,10 @@
 extends:
 - spectral:oas
+rules:
+  tag-description:
+    description: Please provide a description for each tag.
+    given: $.tags[*]
+    severity: error
+    then:
+      field: description
+      function: truthy
