@@ -1,13 +1,13 @@
 _id: spc_ebe477c850074ae8a02e2ee044982951
 type: ApiSpec
 parentId: wrk_56ba6e2d48d24f50a071cafa70a3ae15
-modified: 1671098607120
+modified: 1673000286631
 created: 1649317912103
 fileName: Dino Park
 contents: |-
   openapi: 3.1.0
   info:
-    description: "Our AAA Dino Park API"
+    description: "Our Dino Park API"
     version: 1.0.2
     title: Dino Park
     termsOfService: http://insomnia.rest/terms/
