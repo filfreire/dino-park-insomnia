@@ -1,0 +1,23 @@
+_id: req_73fb57aa7aab406c8e7ef7fc29da4ff5
+type: Request
+parentId: wrk_56ba6e2d48d24f50a071cafa70a3ae15
+modified: 1700478172774
+created: 1700478152377
+url: httpbin.org/anything
+name: experiment
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnia/8.4.2
+authentication: {}
+metaSortKey: -1700478152377
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
