@@ -1,0 +1,27 @@
+_id: req_5860c5b9e3e345d18196376aeaf392e3
+type: Request
+parentId: fld_eeb0ae87232341a6b6f501e60535a31e
+modified: 1715609017662
+created: 1715609017662
+url: "{{ _.base_url }}/dinosaurs"
+name: Create a Dinosaur
+description: ""
+method: POST
+body: {}
+preRequestScript: ""
+parameters: []
+headers: []
+authentication:
+  type: apikey
+  key: api_key_by_me
+  value: "{{ _.apiKeyByMe }}"
+  addTo: header
+metaSortKey: -1715609017662
+isPrivate: false
+pathParameters: []
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

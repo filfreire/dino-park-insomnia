@@ -1,10 +1,11 @@
 _id: ut_a2d64c5263ad40bbab7bcb5ea7a11394
 type: UnitTest
 parentId: uts_bf263ed2a1b44b40b3f2e133f9628ac3
-modified: 1652262203129
+modified: 1715609171272
 created: 1651763953089
-requestId: req_wrk_56ba6e2d48d24f50a071cafa70a3ae153325733a
-name: Returns 200
+requestId: req_7718e1ae1e7641f7a76a95bf3efad9e8
+name: Turn on/off electricity healthcheck
 code: |-
   const response1 = await insomnia.send();
   expect(response1.status).to.equal(200);
+metaSortKey: -1715608723397

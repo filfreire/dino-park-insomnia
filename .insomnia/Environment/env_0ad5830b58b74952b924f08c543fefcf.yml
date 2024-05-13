@@ -1,0 +1,15 @@
+_id: env_0ad5830b58b74952b924f08c543fefcf
+type: Environment
+parentId: env_3105d886bdaa60d1bbba8a7380f0aee6c5448c1d
+modified: 1715609114170
+created: 1715609017659
+name: Production
+data:
+  scheme: https
+  base_path: ""
+  host: mock_e05fed62f2594520be086f19063984ce.mock.insomnia.rest
+  apiKeyByMe: apiKeyByMe
+dataPropertyOrder: null
+color: null
+isPrivate: false
+metaSortKey: 1715609017659

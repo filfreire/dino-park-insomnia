@@ -1,14 +1,14 @@
 _id: spc_ebe477c850074ae8a02e2ee044982951
 type: ApiSpec
 parentId: wrk_56ba6e2d48d24f50a071cafa70a3ae15
-modified: 1691751890447
+modified: 1715609184343
 created: 1649317912103
 fileName: Dino Park
 contents: |-
   openapi: 3.1.0
   info:
     description: "Our Dino Park API"
-    version: 1.0.2
+    version: 1.0.4
     title: Dino Park
     termsOfService: http://insomnia.rest/terms/
     contact:
@@ -17,10 +17,12 @@ contents: |-
       identifier: "mit"
       name: MIT
   servers:
-    - url: https://mockbin.org/request/v1
-  tags:
+    - url: https://mock_e05fed62f2594520be086f19063984ce.mock.insomnia.rest
+  tags:  
     - name: dinosaurs
       description: Dinosaurs of Dino Park
+    - name: security
+      description: Security related components of Dino Park
 
     
   paths:
@@ -60,6 +62,7 @@ contents: |-
                   $ref: "#/components/schemas/Error"
 
       post:
+        description: "create a dinosaur"
         x-kong-plugin-request-validator:
           enabled: true
         summary: Create a Dinosaur
@@ -81,6 +84,7 @@ contents: |-
         security:
             - my_api_key: []
         summary: Turn on/off the electricity of the fences
+        description: Turn on/off the electricity of the fences
         operationId: securityFences
         tags:
           - security

@@ -1,13 +1,14 @@
-_id: req_wrk_56ba6e2d48d24f50a071cafa70a3ae153eefe718
+_id: req_3863dea4fcd24111b04b2198af711ed9
 type: Request
-parentId: fld_wrk_56ba6e2d48d24f50a071cafa70a3ae1578dd29cc
-modified: 1650545489247
-created: 1650545489247
-url: "{{ base_url }}/dinosaurs"
+parentId: fld_eeb0ae87232341a6b6f501e60535a31e
+modified: 1715609017662
+created: 1715609017662
+url: "{{ _.base_url }}/dinosaurs"
 name: List all Dinosaurs
 description: ""
 method: GET
 body: {}
+preRequestScript: ""
 parameters:
   - name: limit
     disabled: true
@@ -16,10 +17,11 @@ headers: []
 authentication:
   type: apikey
   key: api_key_by_me
-  value: "{{ apiKeyByMe }}"
+  value: "{{ _.apiKeyByMe }}"
   addTo: header
-metaSortKey: -1650545489247
+metaSortKey: -1715609017662
 isPrivate: false
+pathParameters: []
 settingStoreCookies: true
 settingSendCookies: true
 settingDisableRenderRequestBody: false
