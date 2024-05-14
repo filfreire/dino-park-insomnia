@@ -1,8 +1,8 @@
-_id: req_3863dea4fcd24111b04b2198af711ed9
+_id: req_d7805a17c7f04b0ab9910fdea03203aa
 type: Request
-parentId: fld_eeb0ae87232341a6b6f501e60535a31e
-modified: 1715609017662
-created: 1715609017662
+parentId: fld_9f9262b695f647f488a45078b55cbde4
+modified: 1715696063148
+created: 1715696063148
 url: "{{ _.base_url }}/dinosaurs"
 name: List all Dinosaurs
 description: ""
@@ -19,7 +19,7 @@ authentication:
   key: api_key_by_me
   value: "{{ _.apiKeyByMe }}"
   addTo: header
-metaSortKey: -1715609017662
+metaSortKey: -1715696063148
 isPrivate: false
 pathParameters: []
 settingStoreCookies: true

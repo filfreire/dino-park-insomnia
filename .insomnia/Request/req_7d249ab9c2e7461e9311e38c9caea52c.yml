@@ -1,22 +1,31 @@
-_id: req_7718e1ae1e7641f7a76a95bf3efad9e8
+_id: req_7d249ab9c2e7461e9311e38c9caea52c
 type: Request
-parentId: fld_6e4364e9aab04eb38c531cb9e56fd45d
-modified: 1715609017663
-created: 1715609017663
+parentId: fld_b81bf8ee64bd412fba79ceafae5c489f
+modified: 1715696708101
+created: 1715696063151
 url: "{{ _.base_url }}/security/fences"
 name: Turn on/off the electricity of the fences
 description: ""
 method: POST
-body: {}
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"raptor_enclosure": {
+    			"status": "damaged"
+    		}
+    }
 preRequestScript: ""
 parameters: []
-headers: []
+headers:
+  - name: Content-Type
+    value: application/json
 authentication:
   type: apikey
   key: api_key_by_me
   value: "{{ _.apiKeyByMe }}"
   addTo: header
-metaSortKey: -1715609017663
+metaSortKey: -1715696063151
 isPrivate: false
 pathParameters: []
 settingStoreCookies: true

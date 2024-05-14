@@ -1,0 +1,15 @@
+_id: env_634fef705f874c2abb1838315d0ee8f4
+type: Environment
+parentId: env_3105d886bdaa60d1bbba8a7380f0aee6c5448c1d
+modified: 1715696063145
+created: 1715696063145
+name: OpenAPI env mock_e05fed62f2594520be086f19063984ce.mock.insomnia.rest
+data:
+  scheme: https
+  base_path: ""
+  host: mock_e05fed62f2594520be086f19063984ce.mock.insomnia.rest
+  apiKeyByMe: apiKeyByMe
+dataPropertyOrder: null
+color: null
+isPrivate: false
+metaSortKey: 1715696063145

@@ -1,22 +1,31 @@
-_id: req_5860c5b9e3e345d18196376aeaf392e3
+_id: req_b604418b3f3e4c099efc825c31fd9087
 type: Request
-parentId: fld_eeb0ae87232341a6b6f501e60535a31e
-modified: 1715609017662
-created: 1715609017662
-url: "{{ _.base_url }}/dinosaurs"
+parentId: fld_9f9262b695f647f488a45078b55cbde4
+modified: 1715696074166
+created: 1715696063150
+url: "{{ _.base_url }}/new-dinosaur-embryo"
 name: Create a Dinosaur
 description: ""
 method: POST
-body: {}
+body:
+  mimeType: application/json
+  text: |
+    {
+      "id": 1,
+      "name": "Tyrannosaurus rex",
+      "tag": "Tyrannosaurus"
+    }
 preRequestScript: ""
 parameters: []
-headers: []
+headers:
+  - name: Content-Type
+    value: application/json
 authentication:
   type: apikey
   key: api_key_by_me
   value: "{{ _.apiKeyByMe }}"
   addTo: header
-metaSortKey: -1715609017662
+metaSortKey: -1715696063150
 isPrivate: false
 pathParameters: []
 settingStoreCookies: true

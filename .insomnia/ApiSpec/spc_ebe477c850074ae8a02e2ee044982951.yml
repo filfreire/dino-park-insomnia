@@ -1,7 +1,7 @@
 _id: spc_ebe477c850074ae8a02e2ee044982951
 type: ApiSpec
 parentId: wrk_56ba6e2d48d24f50a071cafa70a3ae15
-modified: 1715609184343
+modified: 1715696524801
 created: 1649317912103
 fileName: Dino Park
 contents: |-
@@ -12,7 +12,7 @@ contents: |-
     title: Dino Park
     termsOfService: http://insomnia.rest/terms/
     contact:
-      email: support@insomnia.rest
+      email: noreply@insomnia.rest
     license:
       identifier: "mit"
       name: MIT
@@ -22,9 +22,7 @@ contents: |-
     - name: dinosaurs
       description: Dinosaurs of Dino Park
     - name: security
-      description: Security related components of Dino Park
-
-    
+      description: Security related components of Dino Park  
   paths:
     /dinosaurs:
       x-kong-name: dinosaurs
@@ -60,7 +58,7 @@ contents: |-
               application/json:
                 schema:
                   $ref: "#/components/schemas/Error"
-
+    /new-dinosaur-embryo:
       post:
         description: "create a dinosaur"
         x-kong-plugin-request-validator:
