@@ -6,7 +6,7 @@ Sandbox/experiment repository to try out [Insomnia](https://insomnia.rest)'s Git
 
 - [Docker](https://docs.docker.com/engine/install/)
 - [DecK](https://github.com/Kong/deck) (for Kong Configuration management)
-- [Insomnia](https://github.com/Kong/insomnia/releases) (use version `2022.3.0-beta.4` and up)
+- [Insomnia](https://github.com/Kong/insomnia/releases) (use version `9.1.1` and up)
 
 ## Setup
 
