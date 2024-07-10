@@ -15,7 +15,6 @@ body:
       "name": "Tyrannosaurus rex",
       "tag": "Tyrannosaurus"
     }
-preRequestScript: ""
 parameters: []
 headers:
   - name: Content-Type
@@ -25,9 +24,11 @@ authentication:
   key: api_key_by_me
   value: "{{ _.apiKeyByMe }}"
   addTo: header
+preRequestScript: ""
 metaSortKey: -1715696063150
 isPrivate: false
 pathParameters: []
+afterResponseScript: null
 settingStoreCookies: true
 settingSendCookies: true
 settingDisableRenderRequestBody: false

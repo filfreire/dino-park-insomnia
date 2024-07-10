@@ -8,3 +8,7 @@ description: Dinosaurs of Dino Park
 environment: {}
 environmentPropertyOrder: null
 metaSortKey: -1715696063146
+preRequestScript: null
+afterResponseScript: null
+authentication: null
+headers: null

@@ -8,3 +8,7 @@ description: Security related components of Dino Park
 environment: {}
 environmentPropertyOrder: null
 metaSortKey: -1715696063148
+preRequestScript: null
+afterResponseScript: null
+authentication: null
+headers: null
